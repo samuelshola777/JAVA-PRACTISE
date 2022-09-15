@@ -72,7 +72,7 @@ public class RealCalculator {
                     }
                 case 3:
                     while (true) {
-                        System.out.println("please enter your number");
+                        System.out.println("please enter your number here: ");
                         int multi1 = input.nextInt();
 
                         System.out.println("multiply by what value");
