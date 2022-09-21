@@ -7,6 +7,11 @@ public class MiniDies {
 
     private  int age;
 
+    private int guess;
+
+    public void setguess( int guess){
+        this.guess = guess;
+    }
     public void setname(String userName){
         this.name = name;
     }
@@ -17,11 +22,12 @@ public class MiniDies {
     }
 
         public void setbalance(int amountDeposit){
-            if (amountDeposit > 0){
-                balance = amountDeposit + balance;
+            balance = amountDeposit;
+                    }
 
-            }
-        }
+                    public int getGuess(){
+        return guess;
+                    }
 
         public String getName(){
         return name;

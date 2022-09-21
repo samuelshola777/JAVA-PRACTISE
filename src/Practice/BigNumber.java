@@ -6,7 +6,7 @@ public class BigNumber {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        while (true) {
+
 
             System.out.println("please input your big number");
             double number1 = input.nextDouble();
@@ -14,12 +14,12 @@ public class BigNumber {
             System.out.println("please input your big number ");
             double number2 = input.nextDouble();
 
-            double total = 0;
+
 
             if (number1 > number2) {
-                number1 = total;
+                number1 = number2;
             } else if (number2 > number1) {
-                number2 = total;
+                number2 = number2;
             }
 
             System.out.println("please entre your big number");
@@ -28,22 +28,14 @@ public class BigNumber {
             System.out.println(" please enter your big number");
             double number4 = input.nextDouble();
 
-            int big = 0;
-            if (number3 > number4) {
-                number3 = big;
-            } else if (number4 > number3) {
-                number4 = big;
+      if (number3 > number4){
+          number4 = number3;
+      } else if (number4 > number3) {
+          number4 = number3;
+      }
 
-            }
-            int sum =  0;
-            if (big > total) {
-                big = sum;
-            } else if (total > big) {
-                total = sum;
-
-            }
-            System.out.println("khyclouf;iiudciyhxikyhiydxdkihydcikhyiydcikhyikdciyhcyciyhc"+"   "+big+"   "+sum);
+            System.out.println( number2 + number3 );
 
         }
     }
-}
+
