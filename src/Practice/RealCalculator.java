@@ -42,10 +42,11 @@ public class RealCalculator {
                             continue;
                         } else if (feedback == 900) {
                             break;
-                        } else if (feedback != 900 || feedback != 700) {
+                        } else if (feedback != 900 && feedback != 700) {
                             break;
                         }
                     }
+                    break;
                 case 2:
                     while (true) {
                         System.out.println("please enter your number");
@@ -65,11 +66,12 @@ public class RealCalculator {
                             continue;
                         } else if (takeBake == 900) {
                             break;
-                        } else if (takeBake != 900 || takeBake != 700) {
+                        } else if (takeBake != 900 && takeBake != 700) {
                             break;
                         }
 
                     }
+                    break;
                 case 3:
                     while (true) {
                         System.out.println("please enter your number here: ");
@@ -89,11 +91,11 @@ public class RealCalculator {
                             continue;
                         } else if (result == 900) {
                             break;
-                        } else if (result != 700 || result != 900) {
+                        } else if (result != 700 && result != 900) {
                             break;
                         }
                     }
-
+                    break;
                 case 4:
                     while (true) {
                         System.out.println("please enter your number");
@@ -112,11 +114,12 @@ public class RealCalculator {
                             continue;
                         } else if (Division == 900) {
                             break;
-                        } else if (Division != 700 || Division != 900) {
+                        } else if (Division != 700 && Division != 900) {
                             break;
                         }
 
                     }
+                    break;
                 case 5:
                     while (true) {
                         System.out.println(" please enter your number ");
@@ -134,12 +137,14 @@ public class RealCalculator {
                             continue;
                         } else if (power == 900) {
                             break;
-                        } else if (power != 700 || power != 900) {
+                        } else if (power != 700 && power != 900) {
                             break;
                         }
 
                     }
+                    break;
                 default:
+                    break;
             }
             }
         }

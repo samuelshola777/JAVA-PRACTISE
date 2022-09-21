@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class Play  {
     public static void main(String[] args) {
 
-        int product = 3;
+        double c= 13;
+        double d = 3.0;
+        double f = 4.0;
+if (c ==13.0 && d == 3.0 && f == 4.0){
 
-        while (product <= 100) {
-            product = 3 * product;
-        }
-        System.out.println(product);
+    System.out.println(Math.sqrt(c + d * f));
+
+}
+
 
 
 
