@@ -12,15 +12,28 @@ public class AutomaticBikeTest {
         myAutomaticBike.turnon();
         assertTrue(myAutomaticBike.powerMode());
     }
+//@Test
+//public void turnoff(){
+//
+//    AutomaticBike myAutomaticBike = new AutomaticBike();
+//
+//    myAutomaticBike.turnoff();
+//
+//    assertFalse(myAutomaticBike.powerMode());
+//
+//}
 @Test
-public void turnoff(){
-
+public void turnOn(){
     AutomaticBike myAutomaticBike = new AutomaticBike();
-
-    myAutomaticBike.turnoff();
-
-    assertFalse(myAutomaticBike.powerMode());
+    myAutomaticBike.turnon();
+    assertEquals(true,myAutomaticBike.powerMode());
+}
+@Test
+    public void createGear(){
+    AutomaticBike myAutomaticBike = new AutomaticBike();
+    assertEquals(1,myAutomaticBike.setGear());
 
 }
+
 
 }

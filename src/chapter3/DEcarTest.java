@@ -9,6 +9,6 @@ public class DEcarTest {
       car1.applyDiscount(5.00);
       car1.applyDiscount(7.00);
         System.out.println(car1.getPrice());
-        System.out.println(car2.getPrice());
+       // System.out.println(car2.getPrice());
     }
 }
