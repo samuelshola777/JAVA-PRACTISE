@@ -9,5 +9,8 @@ public class ModifyClockTest {
                 ,clock.getMinute(),clock.getSeconds());
         System.out.println("<<----------------------------------->>");
 ModifyClock.displayTime(10,30,20);
+
+        System.out.println("this is clock ()->  "+clock);
     }
+
 }

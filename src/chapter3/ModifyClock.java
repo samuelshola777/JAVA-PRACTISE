@@ -50,4 +50,13 @@ public class ModifyClock {
         System.out.printf(" hour: %2d, minute: %3d, seconds: %2d ", hour,minute,seconds);
 
     }
+
+    @Override
+    public String toString() {
+        return "ModifyClock{" +
+                "hour=" + hour +
+                ", minute=" + minute +
+                ", seconds=" + seconds +
+                '}';
+    }
 }

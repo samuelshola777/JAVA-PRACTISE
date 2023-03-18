@@ -1,14 +1,21 @@
 package chapter3;
-import javax.swing.JOptionPane;
 import java.util.Scanner;
 
-public class AccountTest {
+public class BankAccountTest {
+
+    private String name;
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        Clock clock = new Clock();
 
+
+
+        System.out.println("this hour   ()-> "+clock.getMinutes());
         Account Account1 = new Account("sambone", 5000);
         Account Account2 = new Account("Boneshaker", -700);
+        Account1.setName("samuelshola");
 
         System.out.println("your account name is " + Account1.getName() + "\nand your account balance is   " + Account1.getBalance());
         System.out.println();

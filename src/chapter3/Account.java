@@ -4,7 +4,7 @@ public class Account {
 
 
     private double balance;
-    private String name;
+    private String name ;
 
     public Account(String name, double balance) {
         this.name = name;
@@ -21,6 +21,7 @@ public class Account {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
