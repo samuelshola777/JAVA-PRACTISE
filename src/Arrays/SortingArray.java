@@ -6,12 +6,12 @@ public class SortingArray {
 
         int arrangng = 0;
 
-        for (int counter = 0 ; counter < array.length; counter++){
+        for (int counter1 = 0 ; counter1 < array.length; counter1++){
 
-            for (int counter2 = counter;  counter2 < array.length ; counter2++){
-                if (array[counter]< array[counter2]){
-                    arrangng = array[counter];
-                    array[counter] = array[counter2];
+            for (int counter2 = counter1;  counter2 < array.length ; counter2++){
+                if (array[counter1]> array[counter2]){
+                    arrangng = array[counter1];
+                    array[counter1] = array[counter2];
                     array[counter2] = arrangng;
 
                 }
@@ -19,7 +19,7 @@ public class SortingArray {
 
         }
         for (int counter = 0 ; counter < array.length ; counter++){
-            System.out.println(array[counter]);
+            System.out.print(array[counter]+" ");
 
         }
     }
