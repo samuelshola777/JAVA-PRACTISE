@@ -18,5 +18,7 @@ public class BinaryNumber {
         }
         System.out.println(raise);
 
+
+
     }
 }
