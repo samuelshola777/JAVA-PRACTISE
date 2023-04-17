@@ -26,6 +26,7 @@ public class EncryptingAndDecrypting {
             stringReceiver += String.valueOf(holder[i]);
 //
         }
+//        stringReceiver.charAt(3) = stringReceiver.charAt(0);
 //        holder[3] = holder[1];
 //        holder[0] = holder[2];
 //        stringReceiver += String.valueOf(holder[0]);

@@ -33,27 +33,47 @@ public class Palindromes {
 //          words += words.charAt(i);
         }
         for (int i = 0; i < result.length(); i++) {
-            if ( words.charAt(i) == result.charAt(i)) {
+            if ( result.equals(words)) {
                 return "it's a palindrome ()->  "+ result +"  word "+words;
             }
         }return "it's not a palindrome  ()->  "+ result;
 
     }
 
-    public static void main(String[] args) {
-        Scanner input1 = new Scanner(System.in);
-        while (true){
-        System.out.println(palindromes());
 
+    public static boolean isPalindrome() {
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder builder = new StringBuilder();
+        System.out.println("enter number of words");
+        String words = scanner.nextLine();
 
-        System.out.println("""
-            to continue press yes or press no to Exit
-            """);
-        String control = input1.nextLine();
-        if (control.equals("yes"))continue;
-        break;
+        for (int i = words.length() -1; i >= 0; i--) {
+            builder.append(words.charAt(i));
+        }
+        String newWord = builder.toString();
+        if (newWord.equals(words)) {
+            return true;
+        }
+        return false;
     }
 
-}
+
+
+    public static void main(String[] args) {
+//        Scanner input1 = new Scanner(System.in);
+//        while (true){
+//        System.out.println(palindromes());
+//
+//
+//        System.out.println("""
+//            to continue press yes or press no to Exit
+//            """);
+//        String control = input1.nextLine();
+//        if (control.equals("yes"))continue;
+//        break;
+
+
+        System.out.println(isPalindrome());
+    }
 
 }
