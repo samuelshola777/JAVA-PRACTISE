@@ -14,6 +14,7 @@ public class EncryptingAndDecrypting {
     public static String encryption(String number){
       int[] holder = new int [number.length()];
       int[] holder1 = new int [number.length()];
+      String[] holder2 = new String [number.length()];
         String stringReceiver = " ";
       int arrayReceiver = 0;
         String newNumber = ifContainAlphabetic(number);
@@ -23,16 +24,19 @@ public class EncryptingAndDecrypting {
         for (int i = 0; i < holder.length; i++) {
             holder1[i] = holder[i] * 7;
            holder[i] =   holder1[i]  % 10 ;
-            stringReceiver += String.valueOf(holder[i]);
-//
+
+     holder2[i] = String.valueOf(holder[i]);
+
         }
-//        stringReceiver.charAt(3) = stringReceiver.charAt(0);
-//        holder[3] = holder[1];
-//        holder[0] = holder[2];
-//        stringReceiver += String.valueOf(holder[0]);
-//        stringReceiver += String.valueOf(holder[1]);
-//        stringReceiver += String.valueOf(holder[2]);
-//        stringReceiver += String.valueOf(holder[3]);
+     stringReceiver = holder2[0];
+      holder2[0] = holder2[2];
+      holder2[2] = stringReceiver;
+stringReceiver = holder2[1];
+holder2[1] = holder2[3];
+holder2[3] = stringReceiver;
+        for (int i = 0; i < holder2.length; i++) {
+          stringReceiver += holder2[i];
+        }
         return stringReceiver;
     }
 
