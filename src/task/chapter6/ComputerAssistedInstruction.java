@@ -21,18 +21,23 @@ static Scanner scanner = new Scanner(System.in);
     public static boolean questionAsker(){
         int number1 = number1Generator();
         int number2 = number2Generator();
-        System.out.println( "please answer the question below  " +
-                "\n"+"()->   "   +number1 + " * " + number2);
-     int StudentAnswer = scanner.nextInt();
-    int answer2 =   answerProvider(number1, number2);
-    if (StudentAnswer == answer2){
-        return true;
-    }
-     return false;
+     while (true) {
+         System.out.println("please answer the question below  " +
+                 "\n" + "()->   " + number1 + " * " + number2);
+         int StudentAnswer = scanner.nextInt();
+         int answer2 = answerProvider(number1, number2);
+         if (StudentAnswer == answer2) {
+             break;
+         }
+         System.out.println("no , please try again");
+     }
+   return true;
     }
 
     public static void main(String[] args) {
-        
+
+
+
     }
 
 
