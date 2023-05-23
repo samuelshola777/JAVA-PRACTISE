@@ -1,8 +1,13 @@
 package codeWars;
 
+import com.sun.source.doctree.SeeTree;
+
+import java.util.HashSet;
+import java.util.Set;
+
 public class PangramChecker {
 
-    public static String remove(String word){
+    public  String remove(String word){
 //      String collect = "";
         StringBuilder collect = new StringBuilder();
         for (int i = 0; i < word.length(); i++) {
@@ -12,32 +17,28 @@ public class PangramChecker {
         }
         return collect.toString();
     }
-    public static boolean checkPangram(String word){
-        String [] alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
-        int count = 0;
+    public  boolean checkPangram(String word) {
+        String[] alphabet = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+
         String collect = remove(word);
+        Set<String> letter = new HashSet<>();
+        for (int i = 0; i < alphabet.length; i++) {
+            for (int j = 0; j < collect.length(); j++) {
 
+                if (alphabet[i].equalsIgnoreCase(String.valueOf(collect.charAt(j)))) {
+                    letter.add(String.valueOf(collect.charAt(j)));
 
-        for (int i = 0; i < collect.length(); i++) {
-            for (int j = 0; j < alphabet.length; j++) {
-            //    String alphabetZ = alphabet[j];
-            //    System.out.print(" "+alphabetZ);
-              if ( alphabet[j].equalsIgnoreCase(String.valueOf(collect.charAt(i))) ){
-//                  count++;
-                  System.out.println(collect.charAt(i));
-
-              }
+                }
             }
         }
-        if (count == collect.length()){
-            return true;
-        }
-        return false;
+        System.out.println(letter);
+        return letter.size() == 26;
     }
 
     public static void main(String[] args) {
-
-        System.out.println(checkPangram("a  c d e F G h i j k l N m o p q r s T u V w X y Z"));
+        String words = "The quick brown fox jumps over the lazy dog" ;
+PangramChecker para = new PangramChecker();
+        System.out.println(para.checkPangram(words));
 
     }
 }
