@@ -17,22 +17,27 @@ public class PangramChecker {
         int count = 0;
         String collect = remove(word);
 
-        for (int i = 0; i < word.length(); i++) {
+
+        for (int i = 0; i < collect.length(); i++) {
             for (int j = 0; j < alphabet.length; j++) {
-              if ( alphabet[j].equalsIgnoreCase(String.valueOf(word.charAt(i)))){
-                  count++;
-                  if (count == word.length()){
-                      return true;
-                  }
+            //    String alphabetZ = alphabet[j];
+            //    System.out.print(" "+alphabetZ);
+              if ( alphabet[j].equalsIgnoreCase(String.valueOf(collect.charAt(i))) ){
+//                  count++;
+                  System.out.println(collect.charAt(i));
+
               }
             }
+        }
+        if (count == collect.length()){
+            return true;
         }
         return false;
     }
 
     public static void main(String[] args) {
 
-        System.out.println(checkPangram("The quick brown fox jumps over the lazy dog"));
+        System.out.println(checkPangram("a  c d e F G h i j k l N m o p q r s T u V w X y Z"));
 
     }
 }
