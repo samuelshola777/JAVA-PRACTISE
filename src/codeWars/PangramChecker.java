@@ -26,7 +26,7 @@ public class PangramChecker {
             for (int j = 0; j < collect.length(); j++) {
 
                 if (alphabet[i].equalsIgnoreCase(String.valueOf(collect.charAt(j)))) {
-                    letter.add(String.valueOf(collect.charAt(j)));
+                    letter.add(String.valueOf(collect.charAt(j)).toLowerCase());
 
                 }
             }
@@ -36,9 +36,11 @@ public class PangramChecker {
     }
 
     public static void main(String[] args) {
-        String words = "The quick brown fox jumps over the lazy dog" ;
+        String words = "The quicK brown fox jumps over the lazy dog" ;
 PangramChecker para = new PangramChecker();
         System.out.println(para.checkPangram(words));
+
+
 
     }
 }

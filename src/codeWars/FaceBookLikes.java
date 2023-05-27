@@ -7,6 +7,18 @@ public static String array(String[] namez){
 
 }
     public static String whoLikeFaceBookPage(String [] name){
+
+        System.out.println("""
+                ********          ****             *           *\n
+                *       *     *          * 
+                
+                
+                
+                
+                
+                """);
+
+
         int m2 = name.length-2;
         switch (name.length) {
             case 0 -> {
