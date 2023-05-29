@@ -1,6 +1,7 @@
 package chapter3;
 
 public class Clock {
+    public  Clock() {}
     private int hours;
     private  int minutes;
     private  int seconds;
@@ -21,10 +22,10 @@ public class Clock {
 
       }
   }
-  public void setHours(int hours){
-      if (hours <= 24){
+  public void setHours(int food){
+      if (food <= 24){
 
-          this.hours = hours;
+          this.hours = food;
       }
   }
 
@@ -51,6 +52,8 @@ public class Clock {
       return minutes;
   }
   public int getSeconds(){
+
+
       return seconds;
   }
 
