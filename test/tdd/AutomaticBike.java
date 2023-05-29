@@ -6,6 +6,8 @@ public class AutomaticBike {
 
     private int speed;
 
+    private  int gear;
+
 
 
     public boolean powerMode() {
@@ -23,5 +25,18 @@ public class AutomaticBike {
             power = false;
         }
     }
+    public void  turnOn(){
+        if (power == false){
+            power = true;
+        }
+    }
 
+    public int setGear() {
+
+            int gear =   1;
+
+
+
+        return gear;
+    }
 }

@@ -3,31 +3,34 @@ package chapter3;
 public class Account {
 
 
-
     private double balance;
-    private  String name;
+    private String name ;
 
-    public Account (String name, double balance){
+    public Account(String name, double balance) {
         this.name = name;
 
-        if (balance > 0.0){
+        if (balance > 0.0) {
             this.balance = balance;
         }
     }
-    public void deposit(double depositAmount){
-         if (depositAmount > 0.0){
-     balance = depositAmount + balance;
+
+    public void deposit(double depositAmount) {
+        if (depositAmount > 0.0) {
+            balance = depositAmount + balance;
         }
     }
 
-    public void setName(String name){
+    public void setName(String name) {
+
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public double getBalance(){
+
+    public double getBalance() {
         return balance;
     }
+
 }

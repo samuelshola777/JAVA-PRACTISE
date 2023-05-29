@@ -1,5 +1,7 @@
 package chapter3;
 
+import PracticeMart.UserInformtionStatic;
+
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -9,6 +11,11 @@ public class HealthReportTest {
         LocalDate date = LocalDate.now();
 
         int year = date.getYear();
+DeCar smile = new DeCar("sienna","2015",4.600);
+        System.out.println(smile);
+
+        UserInformtionStatic.collectCurrentDate();
+
 
 HealthReport healthReport = new HealthReport("name", "none", 0, 0.0, 0.0, 0.0 ,0.0);
 

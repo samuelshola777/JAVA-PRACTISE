@@ -9,6 +9,14 @@ public class MiniDies {
 
     private int guess;
 
+    private int win;
+
+    private int lose;
+    public void setLose() {
+        double lost = 0.20 * this.balance;
+        this.balance -= lost;
+    }
+
     public void setguess( int guess){
         this.guess = guess;
     }
@@ -20,12 +28,16 @@ public class MiniDies {
             this.age = age;
         }
     }
+    public void setWin(double balance){
+        double win = 0.20 * balance;
+        this.balance += win;
+    }
 
         public void setbalance(int amountDeposit){
             balance = amountDeposit;
                     }
 
-                    public int getGuess(){
+        public int getGuess(){
         return guess;
                     }
 
@@ -40,6 +52,15 @@ public class MiniDies {
         return balance;
     }
 
+
+
+    public int getWin(){
+        return win;
+    }
+    public int getLose(){
+       return lose;
+
+    }
 
     }
 

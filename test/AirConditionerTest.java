@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AirConditionerTest {
+public class AirConditionerTest {
     @Test
-    public void turnon() {
+    public void turnOn() {
         AirConditioner myAirconditioner = new AirConditioner();
 
         myAirconditioner.turnon();
