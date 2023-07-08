@@ -18,5 +18,10 @@ public class ThreeMultiplication {
         int result = x * y * z;
 
         System.out.printf("product is %d%n", result);
+
+
+
+
+
     }
 }
