@@ -10,8 +10,10 @@ public class ImperativeApproach {
                 new Person("goat",Gender.MALE, "16"),
                 new Person("tinuAde",Gender.FEMALE, "23"),
                 new Person("amirah",Gender.FEMALE,"16"),
+                new Person("tolu",Gender.FEMALE,"20"),
+                new Person("shola",Gender.MALE,"27")
 
-        )
+        );
 }
 
 }
