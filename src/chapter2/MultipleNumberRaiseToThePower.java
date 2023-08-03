@@ -21,6 +21,8 @@ public class MultipleNumberRaiseToThePower {
     }
 
     public static void main(String[] args) {
+
+        
         multiple();
     }
 }
