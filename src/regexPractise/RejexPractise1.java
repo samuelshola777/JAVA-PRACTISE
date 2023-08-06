@@ -14,7 +14,13 @@ String goat = "agent 007";
 //        Matcher matcher = pattern.matcher("agent 007");
 //        boolean found = matcher.find();
 //        System.out.println(found);
-         Pattern pattern1 = Pattern.compile("agent \\d{3}");
+//         Pattern pattern1 = Pattern.compile("agent \\d{3}");
+//        Matcher matcher1 = pattern1.matcher("agent 007");
+//        boolean found1 = matcher1.find();
+//        System.out.println(found1);
+
+        //TODO: the ',' character means the String is supposed to have atleast 3 number
+ Pattern pattern1 = Pattern.compile("agent \\d{3,}");
         Matcher matcher1 = pattern1.matcher("agent 007");
         boolean found1 = matcher1.find();
         System.out.println(found1);
