@@ -16,7 +16,6 @@ public class IndexOfTwoSum {
                    }
                    return new int[] { i, counter };
                }}
-
         }
     }
 
